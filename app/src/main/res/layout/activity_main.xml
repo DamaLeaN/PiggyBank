@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CD6358"
+    android:backgroundTint="#FD6040"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="309dp"
+        android:layout_height="52dp"
+        android:background="#FFFFFF"
+        android:onClick="calcular"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="247dp"
+        android:layout_height="407dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#F3C37A"
+            android:backgroundTint="#EDA638"
+            android:paddingLeft="25px"
+            android:paddingTop="15px"
+            android:text="Valor Inicial"
+            android:textAlignment="viewStart"
+            android:textColor="#FBF5F5"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtValorInicial"
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:ems="10"
+            android:hint="Valor em R$. Ex:1000.00"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textColorLink="#EF0808"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#EDA638"
+            android:paddingLeft="25px"
+            android:paddingTop="15px"
+            android:text="Aplicação mensal"
+            android:textColor="#FBF5F5"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtMensal"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:ems="10"
+            android:hint="Ex:100.00"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#EDA638"
+            android:paddingLeft="25px"
+            android:paddingTop="15px"
+            android:text="Tempo de Aplicação"
+            android:textColor="#FBF5F5"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtMes"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Em meses"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textColorHighlight="#000000"
+            android:textColorHint="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="#EDA638"
+            android:paddingLeft="25px"
+            android:paddingTop="15px"
+            android:text="Taxa"
+            android:textColor="#FBF5F5"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtTaxa"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Ex: 0.02"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="414dp"
+        android:layout_height="194dp"
+        android:background="#EDA638"
+        app:srcCompat="@drawable/saving_piggy_bank_money_finance_pig_6db0632c7de433a02b06af0eca61be93"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
